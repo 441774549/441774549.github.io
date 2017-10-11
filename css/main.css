@@ -1092,6 +1092,9 @@ pre .javascript .function {
 .header {
   background: transparent;
 }
+.header {
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507641786177&di=b2bf395816e4e8d9b26de2363b03817a&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F03%2F77%2F3dd4b1198386c1a4a5e4b3fb9dd0f4e7.jpg");
+}
 .header-inner {
   position: relative;
 }
@@ -1942,7 +1945,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #58c7af;
+  background: #9f05ff;
 }
 .links-of-blogroll {
   font-size: 13px;
