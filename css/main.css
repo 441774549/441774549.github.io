@@ -1194,7 +1194,6 @@ pre .javascript .function {
   width: 450px;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(255,255,255,0.65);
 }
 .menu .menu-item {
   display: inline-block;
@@ -1949,7 +1948,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #34b1f2;
+  background: #ffb50b;
 }
 .links-of-blogroll {
   font-size: 13px;
