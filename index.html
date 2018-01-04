@@ -333,8 +333,8 @@
 
       
         
-          <p>每一个iOS项目都会有一个「网络模块」，大部分的网络请求都是通过HTTP完成，比如用AFNetworking就能很容易搭建一个功能简易的网络模块。但这一模块要优化好却没那么简单，大致总结一下iOS项目网络模块的方面优化。</p>
-<h2 id="优化清单"><a href="#优化清单" class="headerlink" title="优化清单"></a>优化清单</h2><h3 id="DNS映射"><a href="#DNS映射" class="headerlink" title="DNS映射"></a>DNS映射</h3><p>为什么要DNS缓存：减少DNS解析时间，防止DNS劫持、服务器动态部署。需要注意的是映射关系的及时更新、缓存时间的设定，如果映射出错，使用默认的DNS解析</p>
+          <p>每一个iOS项目都会有一个「网络模块」，大部分的网络请求都是通过HTTP完成，比如用AFNetworking就能很容易搭建一个功能简易的网络模块。但这一模块要优化好却没那么简单，大致介绍以下iOS网络方面的优化。</p>
+<h3 id="DNS映射"><a href="#DNS映射" class="headerlink" title="DNS映射"></a>DNS映射</h3><p>为什么要DNS缓存：减少DNS解析时间，防止DNS劫持、服务器动态部署。需要注意的是映射关系的及时更新、缓存时间的设定，如果映射出错，使用默认的DNS解析</p>
 <h3 id="请求压缩"><a href="#请求压缩" class="headerlink" title="请求压缩"></a>请求压缩</h3><p>DNS查询之后是TCP握手建立连接，并发送请求数据。对于TCP来说，单个IP包大小受限于MSS值，大部分用户所处网络环境下每个包的大小约在1.5KB，新建立的HTTP连接由于TCP的slow start特性，会导致本地的部分IP包本临时缓存，从而增加了整体request的延迟。所以我们应该尽可能尝试去压缩我们的网络请求业务数据，减少一个Request的IP包数量，或许可以让用户少经历一个RTT，降低请求延迟的用户感知。<br>
           <!--noindex-->
           <div class="post-button text-center">
